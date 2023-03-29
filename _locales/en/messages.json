@@ -1,0 +1,8 @@
+{
+  "extensionName": {
+    "message": "Simple Hello"
+  },
+  "extensionDescription": {
+    "message": "Adds 'Hello <FirstName>,' line at the beginning of a new or replied to message"
+  }
+}

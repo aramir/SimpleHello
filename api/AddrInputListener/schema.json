@@ -1,0 +1,12 @@
+[
+  {
+    "namespace": "AddrInputListener",
+    "events": [
+      {
+        "name": "onEditingFinished",
+        "type": "function",
+        "description": "Fires when the user clicks anywhere on the toolbar in the main window."
+      }
+    ]
+  }
+]

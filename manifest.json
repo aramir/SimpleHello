@@ -1,0 +1,38 @@
+{
+  "default_locale": "en",
+  "manifest_version": 2,
+  "name": "__MSG_extensionName__",
+  "description": "__MSG_extensionDescription__",
+  "version": "1",
+  "applications": {
+    "gecko": {
+      "id": "simplehello@extensions.thunderbird.net",
+      "strict_min_version": "76.0a1",
+      "strict_max_version": "110.0"
+    }
+  },
+  "permissions": [
+    "compose"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "experiment_apis": {
+    "LegacyPrefs": {
+      "schema": "api/LegacyPrefs/schema.json",
+      "parent": {
+        "scopes": [
+          "addon_parent"
+        ],
+        "paths": [
+          [
+            "LegacyPrefs"
+          ]
+        ],
+        "script": "api/LegacyPrefs/implementation.js"
+      }
+    }
+  }
+}
